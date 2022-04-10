@@ -18,7 +18,7 @@ public class BootStrapData {
     @PostConstruct
     public void prefillData() {
     	
-        for (int i = 62; i< 64; i++) {
+        for (int i = 62; i< 62*62; i++) {
             UrlMapping newUrlMapping = createUrlMapping(i);
             urlShortenerRepository.save(newUrlMapping);
         }
